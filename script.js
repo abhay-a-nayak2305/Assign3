@@ -57,11 +57,12 @@ function Yellow() {
     }
 }
 
-function Greet()
-{
-    let input=document.getElementById('name');
-    let x=input.value;
-    console.log(x);
-    let text=document.getElementById('head');
-    text.innerHTML="Hello, "+x;
+function Greet() {
+    let input = document.getElementById('name');
+    let x = input.value;
+    if (x != "") {
+        console.log(x);
+        let text = document.getElementById('head');
+        text.innerHTML = "Hello, " + x;
+    }
 }
